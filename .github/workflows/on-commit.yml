@@ -1,4 +1,4 @@
-name: Update Commit Hash
+name: Update Commit Hash File
 
 on:
   push:
