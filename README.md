@@ -87,9 +87,13 @@ Pay attention to the installer notes after completion.
 
 On all operating systems, the path to Node.js should automatically be added to your system path. But you can check your path if you want to be sure. On Windows, you can search for "edit the system environment variables" in your system, select "Environment Variables..." once you are in the system properties, and then check for a path to Node in your "Path" system variable. On a Mac or Linux machine, it will tell you to check if /usr/local/bin is in your $PATH. To determine if usr/local/bin is included in $PATH open your Terminal and run:
 
+
+
 ```
 echo $PATH .
 ```
+
+
 
 If you see usr/local/bin in the output then you're good to go.
 
