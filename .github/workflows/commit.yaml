@@ -13,6 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check if this is a fork
+      run: |
+        if [ "${{ github.repository_owner }}" != "${{ github.event.repository.owner.login }}" ]; then
+          echo "This is a fork. Exiting.";
+          exit 0;
+        fi
+        
     - name: Checkout the code
       uses: actions/checkout@v3
       
