@@ -1,0 +1,19 @@
+:root {
+  --md-primary-50: #F8F5FF;
+  --md-primary-100: #F0EBFF;
+  --md-primary-200: #E1D6FF;
+  --md-primary-300: #CEBEFF;
+  --md-primary-400: #B69EFF;
+  --md-primary-500: #9C7DFF;
+  --md-primary-600: #8A5FFF;
+  --md-primary-700: #7645E8;
+  --md-primary-800: #6234BB;
+  --md-primary-900: #502D93;
+  --md-primary-950: #2D1959;
+
+  --md-typeset-color: #502D93; /* Sets the font color for content */
+}
+
+body {
+  color: var(--md-typeset-color);
+}
