@@ -16,7 +16,7 @@ jobs:
     - name: Fail if a fork
       run: |
         if [[ "${{ github.repository }}" != "coleam00/bolt.new-any-llm" ]]; then
-          echo "This is a fork. Exiting.";
+          echo "This faild because it is a fork and this is the intended behavior. Exiting.";
           exit 1;
         fi
         
