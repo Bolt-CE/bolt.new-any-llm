@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check if this is a fork
+    - name: Fail if a fork
       run: |
         if [[ "${{ github.repository }}" != "coleam00/bolt.new-any-llm" ]]; then
           echo "This is a fork. Exiting.";
