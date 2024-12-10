@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Check if this is a fork
       run: |
-        if [ "${{ github.repository_owner }}" != "${{ github.event.repository.owner.login }}" ]; then
+        if [ "${{ github.repository_owner }}" != "coleam00" ]; then
           echo "This is a fork. Exiting.";
           exit 0;
         fi
