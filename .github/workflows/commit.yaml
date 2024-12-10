@@ -15,9 +15,9 @@ jobs:
     steps:
     - name: Check if this is a fork
       run: |
-        if [ "${{ github.repository }}" != "coleam00/bolt.new-any-llm" ]; then
+        if [[ "${{ github.repository }}" != "coleam00/bolt.new-any-llm" ]]; then
           echo "This is a fork. Exiting.";
-          exit 0;
+          exit 1;
         fi
         
     - name: Checkout the code
